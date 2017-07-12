@@ -1,0 +1,68 @@
+<!--pages/list/list.wxml-->
+<scroll-view style="height: 100%;" scroll-y="true" scroll-top="{{scrollTop}}"> 
+  <view class="choose">
+  <input class="cin" value="{{inputname}}" type="text" placeholder="请输入游戏名称" focus='true' bindinput="InputName"/>
+  <picker mode="selector" range="{{array}}" value="{{index}}" bindchange="listenerPickerSelected">
+    <view class="picker">
+          地区：{{array[index]}}
+    </view>
+  </picker>
+    </view>
+    <button class="loginBtn" bindtap="aplChange">搜索</button>
+  <!--<text>商品列表</text>-->
+  <view class="errorword" hidden="{{word}}">{{errorword}}</view> 
+  <view class="container" hidden="{{!word}}">  
+    <!--head-->  
+    <view class="tit">  
+      <view class="title_val">游戏图片</view>  
+      <view class="more">游戏信息</view>  
+    </view>  
+    <!--list-->  
+    <view class="goodslist">  
+      <!--item-->  
+      <block wx:for="{{goodslist}}" wx:key="{{item.id}}">
+        <view class="goods">  
+          <!--左侧图片-->  
+          <view>  
+            <navigator url="../searchid/searchid?id={{item.id}}&region={{item.region}}">
+              <image src="{{item.imgUrl}}" class="good-img" />  
+            </navigator>
+          </view>  
+          <!--右侧说明部分-->  
+          <view class="good-cont">  
+            <!--游戏名-->  
+            <view class="goods-navigator">
+              <navigator url="../searchid/searchid?id={{item.id}}&region={{item.region}}">
+                <text class="good-name">{{item.name}}</text> 
+              </navigator> 
+            </view>  
+            <!--游戏类别-->  
+            <view class="good-type">  
+              <text>类别：{{item.gametype}}</text>  
+            </view>  
+            <!--游戏平台-->  
+            <view class="good-platform">  
+              <text>平台：{{item.platform}}</text>  
+            </view>  
+            <!--游戏发行时间-->  
+            <view class="good-date">  
+              <text>发行：{{item.date}}</text>  
+            </view>  
+            <!--下--价格部分-->  
+            <view class="good-price">  
+              <text>售价：{{item.price}}</text>  
+              <!--<image id="{{item.id}}" class="cart" src="/images/new_73.jpg" bindtap="addcart" />  -->
+            </view>  
+            <view class="good-language">  
+              <text>备注：{{item.language}}</text>  
+            </view> 
+          </view>  <!--good-cont-->     
+        </view>  <!--goods-->     
+      </block>
+      <view class="Btns">  
+      <button class="ChangeBtn" bindtap="ChangePageback" style="background-color:#4876FF">上一页</button> 
+      <button class="ChangeBtn" bindtap="ChangePage" style="background-color:#4876FF">下一页</button> 
+      </view>
+    </view>  <!--goodlist--> 
+  </view>  <!--container-->  
+</scroll-view>
