@@ -1,0 +1,53 @@
+<!--pages/searchid/searchid.wxml-->
+<view>
+  <loading hidden="{{loadinghidden}}">
+      加载中...
+  </loading>
+</view>
+<view class="loading" hidden="{{loading}}">
+  <view class="img">
+    <image class='tittle-img' src="{{images[0].url}}"></image>
+    <image class='tittle-img' src="{{images[1].url}}"></image>
+  </view>
+
+  <text class='tittle-text'>{{title_name}}</text>
+
+  <view class="swiper-view" hidden="{{swipperhidden}}">
+    <view class="page-body">
+      <swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{media.screenshots}}" wx:key="*item">
+          <swiper-item>
+            <image class="swiper-item" src="{{item.url}}"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+
+  <view class='text'>
+    <view class='text-type'>
+      <text>发售日期</text>
+      <text>平台</text>
+      <text>发行商</text>
+      <text>类别</text>
+      <text>年龄限制</text>
+      <text>评分</text>
+    </view>
+    <view class='text-content'>
+      <text>{{release_date}}</text>
+      <text>{{platform}}</text>
+      <text>{{provider}}</text>
+      <text>{{gametype}}</text>
+      <text>{{age_limit}}</text>
+      <text>{{rating}}</text>
+    </view>
+  </view>
+  <block class="long-desc">
+  <view class='text-long-desc'>
+      <text>详细信息：</text>
+  </view>
+  <view class='text-long-desc'>
+      <text>{{long_desc}}</text>
+  </view>
+  </block>
+</view>
