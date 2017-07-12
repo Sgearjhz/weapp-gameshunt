@@ -1,0 +1,193 @@
+/* pages/list/list.wxss */
+page{  
+    height: 100%;  
+}  
+.container{  
+    background: #f5f5f5;  
+    /*position: relative;  */
+}  
+.section{
+  display: flex;  
+  flex-direction: row; 
+}
+.choose{
+  display: flex;
+  flex:3;  
+  flex-direction: column; 
+}
+.pickers{
+display: flex;  
+flex-direction: row; 
+}
+.picker{
+ padding: 10rpx 0 10rpx 30rpx ;
+ display: flex;
+}
+.cin{
+display: flex;
+padding: 10rpx 0 10rpx 30rpx ;
+background-color: white;
+}
+.loginBtn{
+  display: flex;
+  flex:1;  
+  justify-content: center;  
+  border-width: 0rpx;
+  padding: 15rpx 0 0 0;  
+  border-radius: 0;
+  color: white;
+  background-color: #4876FF;
+  font-size: 45rpx;
+  font-weight: 600;
+}
+ /*标题栏目 */
+.tit{  
+    display: flex;  
+    flex-direction: row;  
+    justify-content: space-between;  
+    height: 80rpx;  
+    position: relative;  
+}  
+/*.tit::before{  
+    content:'';  
+    background: #ffff00;  
+    width:5px;  
+    height: 100%;  
+    position: absolute;  
+    left: 0;  
+    top: 0;  
+}  */
+/*游戏图片*/
+.title_val{  
+    padding: 20rpx 30rpx 0 30rpx ;
+    font-size: 28rpx;  
+    color: #555;  
+    line-height: 30rpx; 
+}  
+/*商品信息*/
+.more{  
+    font-size: 28rpx;  
+    line-height: 30rpx;  
+    color: #555;  
+    padding: 20rpx 320rpx 0 0 ;  
+}  
+/*商品列表*/
+.goodslist{  
+    background: #fff;  
+    display: flex;  
+    flex-direction: column;    
+    position: absolute;
+    width: 750rpx;
+}  
+/*每行商品*/
+.goods{  
+    display: flex;  
+    /*flex: 1; */
+    flex-direction: row;
+     padding: 0 0 20rpx 0;
+    /*border-bottom: 2rpx solid #ddd;  */
+}  
+/*图片*/
+.good-img{  
+    padding: 10rpx 10rpx 10rpx 10rpx;
+    width: 260rpx;  
+    height: 260rpx;  
+    border-top-style:inset;
+    /*border-bottom-style:inset;*/
+    border-width:2rpx;
+}  
+/*右盒子*/
+.good-cont{  
+    display: flex;  
+    flex: 1;  
+    flex-direction: column;   
+    border-top-style:inset;
+    /*border-bottom-style:inset;*/
+    border-width:2rpx;
+    height: 310rpx;  
+}  
+/*标题*/
+.goods-navigator{  
+    display: flex;  
+    font-size: 26rpx;
+    flex-direction: column;  
+    justify-content: center;  
+}  
+/*名*/
+.good-name{  
+    display: flex;  
+    flex:1;  
+    flex-direction: column;  
+    color: #555; 
+    text-overflow:ellipsis; 
+    font-weight: 600;
+    /*用缩进第二行对不齐*/
+    padding: 0 30rpx 0 30rpx; 
+    justify-content: center;  
+    border-bottom-style:inset;
+    border-width:1rpx;
+}  
+/*类*/
+.good-type{  
+    display: flex;  
+    flex: 1;  
+    flex-direction: row;  
+    font-size: 24rpx;
+    justify-content: space-between;  
+    color:#555;  
+    padding: 0 0 0 30rpx;
+    
+}  
+/*平*/
+.good-platform{  
+    display: flex;  
+    flex: 1;  
+    flex-direction: row;  
+    font-size: 24rpx;
+    justify-content: space-between;  
+    color:#555;  
+    padding: 0 0 0 30rpx;
+   
+}  
+/*发*/
+.good-date{  
+    display: flex;  
+    flex: 1;  
+    flex-direction: row;  
+    font-size: 24rpx;
+    justify-content: space-between;  
+    color:#555;  
+    padding: 0 0 0 30rpx;
+   
+} 
+/*钱*/
+.good-price{  
+    display: flex;  
+    flex: 1;  
+    flex-direction: row;  
+    font-size: 24rpx;
+    justify-content: space-between;  
+    color:#e4393c;  
+    padding: 0 0 0 30rpx;
+    font-weight: 600;  
+}  
+/*注*/
+.good-language{  
+    display: flex;  
+    flex: 1;  
+    flex-direction: row;  
+    font-size: 24rpx;
+    justify-content: space-between;  
+    color:#555;  
+    padding: 0 0 0 30rpx;
+    
+} 
+.ChangeBtn{
+  width : 50%;
+  color : white;
+  border-radius:0;
+}
+.Btns{
+  display: flex;
+  flex-direction: row;
+}
