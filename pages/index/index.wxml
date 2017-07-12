@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<image class="background" src="http://gameshunt-1253959989.costj.myqcloud.com/v1/images/logo.png"></image>
+<view class="page">
+      <view class="index-bd">
+          <block wx:for-items="{{list}}" wx:key="{{item.id}}">
+            <navigator url="../{{item.page}}/{{item.page}}">
+              <view class="kind-list-item">
+                <view class="kind-list-text">{{item.name}}</view>
+              </view>
+            </navigator>
+          </block>
+      </view>
+</view>
