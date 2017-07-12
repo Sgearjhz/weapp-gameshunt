@@ -2,10 +2,6 @@
 
 本项目需要和 [微信小程序 GamesHunt 服务端 - Node.js](https://github.com/Sgearjhz/weapp-gameshunt-sever) 配合一起使用。
 
-## 运行示例
-
-按照[小程序创建资源配置指引](https://github.com/tencentyun/weapp-doc)进行操作，可以得到运行本项目所需的资源和服务，其中包括已部署好的示例代码及自动下发的 SDK 配置文件 `/etc/qcloud/sdk.config`。
-
 - 本地开发环境：`微信web开发者工具v0.18` `VSCode 1.13.1`
 
 ## 项目结构
