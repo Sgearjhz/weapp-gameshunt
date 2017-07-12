@@ -1,0 +1,40 @@
+<!--pages/showuser/showuser.wxml-->
+<image class="background" src="	http://gameshunt-1253959989.costj.myqcloud.com/v1/images/b{{backgroundimg}}.jpg"></image>
+
+<view class="info">
+  <view class="userinfo-level">
+    <text class="level">等级：{{level}}</text>
+    <text class="rank">排名：{{rank}}</text>
+  </view>
+  <view class="userinfo-ava">
+    <view class="ava-background"></view>
+    <image class="avatar" src="{{ava}}"></image>
+    <view class="text-background">
+      <text class="psnid-text">{{psnid}}</text>
+    </view>
+  </view>
+  <view class="userinfo-trophy">
+    <text class="platinum">{{platinum}}</text>
+    <text class="gold">{{gold}}</text>
+    <text class="silver">{{silver}}</text>
+    <text class="bronze">{{bronze}}</text>
+    <text class="total-trophy">{{total_trophy}}</text>
+  </view>
+  <view class="goodslist">  
+      <!--item-->  
+    <view class="games1"> 
+      <block wx:for="{{games1}}"wx:key="item.game">
+        <navigator url="../searchname/searchname?name={{item.game}}&region=JP">
+          <image src="{{item.img}}" class="game-img1" />
+        </navigator>
+      </block>  
+    </view> 
+    <view class="games2">  
+      <block wx:for="{{games2}}"wx:key="item.game">  
+        <navigator url="../searchname/searchname?name={{item.game}}&region=JP">
+          <image src="{{item.img}}" class="game-img2" />
+        </navigator>
+      </block>     
+    </view>    
+  </view>  
+</view>
