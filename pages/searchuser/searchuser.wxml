@@ -1,0 +1,18 @@
+<!--pages/searchuser/searchuser.wxml-->
+<image class="background" src="	http://gameshunt-1253959989.costj.myqcloud.com/v1/images/b{{backgroundimg}}.jpg"></image>
+
+<view class="page">
+  <view class="section">
+    <view class="input-section">
+      <input type="text" placeholder="--------随机查询--------" focus='true' bindinput="InputUser"/>
+    </view>
+  <view class="btns">  
+    <button class="search-btn" bindtap="ChangeBack">
+      <text class="search-btn-text">更换背景</text>
+    </button>
+    <button class="search-btn" bindtap="SearchBtnClick">
+      <text class="search-btn-text">搜索玩家</text>
+    </button>
+  </view>
+  </view>
+</view>
