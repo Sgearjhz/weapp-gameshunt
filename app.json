@@ -1,0 +1,18 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/searchid/searchid",
+    "pages/list/list",
+    "pages/test/test",
+    "pages/searchuser/searchuser",
+    "pages/searchname/searchname",
+    "pages/showuser/showuser"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#4876FF",
+    "navigationBarTitleText": "游猎",
+    "navigationBarTextStyle":"#C1CDCD",
+    "enablePullDownRefresh": false
+  }
+}
